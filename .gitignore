@@ -1,0 +1,37 @@
+# Virtual environments
+venv/
+rice-env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled or build files
+*.dll
+*.lib
+*.pdb
+*.whl
+
+# Model & weight files
+*.h5
+rice.h5
+rice_model.keras
+
+# Notebooks & checkpoints
+*.ipynb_checkpoints/
+
+# Uploaded or generated data
+uploads/
+dataset/
+
+# Environment variables or secrets
+.env/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
