@@ -4,58 +4,54 @@
     <meta charset="UTF-8" />
     <title>Rice Type Detection</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">RICE TYPE DETECTION</div>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/details">Predict</a></li>
-        </ul>
-      </nav>
       <div>
-        <div class="hero1"></div>
-        <div class="hero">
-          <h1>Welcome to Rice Type Detection</h1>
-          <p>This model can detect rice type based on rice images.</p>
-          <a href="/details" class="btn">Predict</a>
-        </div>
+        <nav class="nav-wrapper">
+          <ul class="menu-bar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/details">Predict</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+      <div class="hero">
+          <div class="hero-content">
+            <h1>WELCOME TO RICE GRAIN DETECTION</h1>
+            <p>This model can detect rice type based on rice images.</p>
+            <a href="/details" class="btn neon-pulse"><span>Predict</span></a>
+          </div>
       </div>
     </header>
 
     <section id="about" class="section">
-      <h2>About the Rice Type Classification Model</h2>
-      <div class="about-content">
-        <img
-          src="{{ url_for('static', filename='crop.jpg') }}"
-          alt="Rice Field"
-        />
-        <ul>
-          <li>
-            <strong>Accuracy of the Model:</strong> 97% accuracy on test data
-          </li>
-          <li>
-            <strong>Different Types of Rice:</strong> Can classify 5 different
-            types
-          </li>
-          <li>
-            <strong>Dataset Used:</strong> Dataset of 75,000 labeled rice grain
-            images from Kaggle
-          </li>
-          <li>
-            <strong>Technical Architecture:</strong> Model trained using
-            MobileNetV2 (Transfer Learning)
-          </li>
-        </ul>
-      </div>
-    </section>
+  <h2 class="section-title">ABOUT RICE TYPE CLASSIFICATION MODEL</h2>
+  <div class="about-content">
+    <img src="{{ url_for('static', filename='photo3.jpg') }}" alt="Rice Field" />
+    <ul>
+      <li><strong>Project Goal:</strong> Automate the identification of rice grain types using image-based classification.</li>
+      <li><strong>Accuracy:</strong> Achieves 97% accuracy on the test dataset, validated through cross-validation.</li>
+      <li><strong>Rice Varieties Covered:</strong> Basmati, Jasmine, Arborio, Ipsala, and Karacadag rice grains.</li>
+      <li><strong>Dataset Source:</strong> Over 75,000 labeled images sourced from a high-quality Kaggle dataset.</li>
+      <li><strong>Model Architecture:</strong> MobileNetV2—a lightweight and efficient convolutional neural network using transfer learning.</li>
+      <li><strong>Training Tools:</strong> TensorFlow, Keras, and OpenCV for image preprocessing and augmentation.</li>
+    
+    </ul>
+  </div>
+</section>
+
+
 
     <section id="testimonials" class="section dark">
       <h2>Purpose of Model</h2>
-      <p>
-        This model used to categorize rice samples 
-      </p>
+      <p>The purpose of this model is to accurately classify different types of rice grains using deep learning techniques. This system leverages image recognition and transfer learning to assist agricultural industries, food quality labs, and researchers in automating the identification process, ensuring consistency, saving time, and reducing human error.</p>
       <p>Very accurate and reliable classification!</p>
     </section>
 
