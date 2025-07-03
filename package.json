@@ -5,15 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch static/scss/style.scss static/css/style.css",
-    "purge": "purgecss --css static/css/style.css --content templates/**/*.html --output static/css/cleaned.css"
-
+    "scss": "sass --watch static/scss/style.scss static/css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "purgecss": "^7.0.2",
     "sass": "^1.89.2"
   }
 }
