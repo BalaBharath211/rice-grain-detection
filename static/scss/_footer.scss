@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+footer {
+  background: $primary-bg;
+  color: $text-color;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid darken($primary-bg, 10%);
+}
+

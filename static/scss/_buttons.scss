@@ -1,0 +1,8 @@
+@use "mixins" as *;
+
+.button,
+button,
+.details button,
+.hero a.btn {
+  @include button-style;
+}

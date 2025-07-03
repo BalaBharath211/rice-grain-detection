@@ -1,0 +1,63 @@
+@use "variables" as *;
+
+.section {
+  padding: 80px 50px;
+  overflow-x: hidden;
+  font-family: $font-alt;
+  background: $section-bg;
+
+  .section-title {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: $text-color;
+  }
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: $box-shadow;
+  }
+
+  ul {
+    max-width: 600px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+  }
+}
+
+.contact-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  div {
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    background: $blur-bg;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.dark {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  margin: 30px;
+}
+

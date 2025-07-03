@@ -35,3 +35,24 @@ Thumbs.db
 
 # Misc
 *.log
+
+# Node / Sass
+node_modules/
+package-lock.json
+.sass-cache/
+*.map
+
+# Compiled CSS
+static/css/style.css
+
+# Editor junk
+.vscode/
+*.swp
+*.swo
+*.bak
+
+# Python & Flask
+__pycache__/
+*.py[cod]
+.env
+

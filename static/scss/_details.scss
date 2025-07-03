@@ -1,0 +1,44 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body.details-page {
+  background: $secondary-bg;
+  font-family: $font-details;
+  color: $text-color;
+
+  .details {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h3 {
+      color: #5D4037;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #3E2723;
+    }
+
+    input[type="file"] {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    button {
+      @include button-style;
+      width: 100%;
+    }
+  }
+}
+

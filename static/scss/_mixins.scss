@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+@mixin transition {
+  transition: all 0.3s ease;
+}
+
+@mixin button-style {
+  display: inline-block;
+  text-decoration: none;
+  background: $btn-bg;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    background: $btn-hover;
+  }
+}

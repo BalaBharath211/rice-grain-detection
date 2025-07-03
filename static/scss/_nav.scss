@@ -1,0 +1,62 @@
+// _nav.scss
+@use "mixins" as *;
+
+.nav-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  .menu-bar {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 30px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+
+    li {
+      list-style: none;
+      font: bold 1rem sans-serif;
+      color: white;
+      padding: 12px 16px;
+      margin: 0 8px;
+      cursor: pointer;
+      position: relative;
+      white-space: nowrap;
+      @include transition;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        transform: scale(1);
+        z-index: -1;
+        @include transition;
+      }
+
+      &:hover::before {
+        background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+        box-shadow: 0 3px 20px black;
+        transform: scale(1.2);
+      }
+
+      &:hover {
+        color: black;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+    }
+  }
+}
+

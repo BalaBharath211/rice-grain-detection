@@ -1,0 +1,24 @@
+// _variables.scss
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+// _variables.scss (updated with earth-tone palette and font pairing)
+$primary-bg: #F5F3EF; // soft rice tan
+$secondary-bg: #F5F3EF;
+$text-color: #2E2E2E; // deep charcoal
+$section-bg: #F5F3EF;
+$btn-bg: #B5694C; // warm terracotta
+$btn-hover: #A05A3B; // clay brown
+$font-main: 'Barlow Condensed', sans-serif;
+$font-alt: 'Inter', sans-serif;
+$font-details: 'Inter', sans-serif;
+$box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+$blur-bg: rgba(255, 255, 255, 0.1);
+
+

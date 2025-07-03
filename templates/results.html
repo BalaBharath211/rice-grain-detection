@@ -2,15 +2,15 @@
 <html>
 <head>
     <title>Prediction Result</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body class="details-page">
+<body class="result-page">
 <header>...</header>
 <main>
     <h2>Prediction Result</h2>
     <img src="/{{ image_path }}" alt="Uploaded Image" style="max-width: 300px;">
     <p><strong>Predicted Rice Type:</strong> {{ prediction }}</p>
-    <a href="/">Try another image</a>
+    <a href="/" class="button">Try another image</a>
 </main>
 </body>
 </html>
