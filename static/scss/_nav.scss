@@ -8,6 +8,17 @@
   transform: translateX(-50%);
   z-index: 10;
 
+    .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
   .menu-bar {
     display: inline-flex;
     align-items: center;
